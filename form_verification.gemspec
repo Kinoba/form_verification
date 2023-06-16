@@ -1,4 +1,4 @@
-$:.push File.expand_path('../lib', __FILE__)
+$:.push File.expand_path('lib', __dir__)
 
 # Maintain your gem's version:
 require 'form_verification/version'
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir['{app,config,db,lib,vendor}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
-  s.add_dependency 'rails', '>= 4.0.0', '<= 6.1'
+  s.add_dependency 'rails', '>= 4.0.0', '< 7.1'
 
   s.add_development_dependency 'sqlite3'
 end
